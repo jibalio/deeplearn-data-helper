@@ -3,7 +3,7 @@ CUSTOM HELPER FUNCTION TO MAKE BATCH FETCHING EZIER
 """
 import itertools
 from itertools import cycle, islice
-class DataWrapper():
+class CycleDataWrapper():
     
     def __init__(self, X_train, y_train, batch_size):
         self.generatorX = cycle(X_train)
